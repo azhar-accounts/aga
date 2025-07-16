@@ -62,7 +62,7 @@ export default function Navbar() {
                                     onClick={() => setIsOpen(false)}
                                     href={link.href}
                                     className={cn(
-                                        '[text-decoration:none] text-sm relative leading-[24px] flex items-center gap-1',
+                                        '[text-decoration:none]  relative leading-[24px] flex items-center gap-1',
                                         'hover:font-semibold transition-all duration-300',
                                         isOpen && 'border-b border-b-white/20'
                                     )}

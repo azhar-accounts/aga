@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
                             <h3 className="text-lg font-semibold uppercase mb-2">
                                 {point.title}
                             </h3>
-                            <p className="text-sm">{point.desc}</p>
+                            <p>{point.desc}</p>
                         </div>
                     ))}
                 </div>

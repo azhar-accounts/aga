@@ -1,4 +1,3 @@
-import React from 'react';
 import _config from '../../constants/index.js';
 
 export default function Services() {
@@ -22,15 +21,13 @@ export default function Services() {
                     <div
                         data-aos="zoom-in-up"
                         key={index}
-                        className="bg-white text-center shadow-md rounded-lg p-8  space-y-4 transition-transform duration-500 ease-in-out hover:scale-105"
+                        className="bg-white text-center shadow-md rounded-lg p-8 space-y-4 transition-transform duration-500 ease-in-out hover:scale-105"
                     >
                         <div className="flex justify-center text-5xl text-soft-blue">
                             {service.icon}
                         </div>
                         <h3 className="text-xl">{service.title}</h3>
-                        <p className="text-sm text-seconday">
-                            {service.description}
-                        </p>
+                        <p className="text-seconday">{service.description}</p>
                     </div>
                 ))}
             </div>

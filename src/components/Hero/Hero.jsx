@@ -26,7 +26,7 @@ export default function Hero() {
                                 Global Entrepreneurs
                             </span>{' '}
                         </h1>
-                        <p className="pt-4 text-sm">
+                        <p className="pt-4">
                             Manage your finances, taxes, and compliance across
                             multiple countries — all in one platform.
                         </p>
@@ -40,14 +40,17 @@ export default function Hero() {
                                 'Multi-Currency',
                                 'Real-time Reports',
                             ]?.map((item) => (
-                                <li className="flex items-center justify-start gap-2">
+                                <li
+                                    className="flex items-center justify-start gap-2"
+                                    key={item}
+                                >
                                     <MdCheckCircle />
                                     <p>{item}</p>
                                 </li>
                             ))}
                         </ul>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-4 pt-4 text-sm text-gray-700 pb-6  text-white">
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4 text-gray-700 pb-6  text-white">
                         <div className="flex items-center gap-2">
                             <FaPhoneAlt />
                             <a

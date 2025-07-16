@@ -7,11 +7,14 @@ import {
     HiOutlineBookOpen,
     HiOutlineCalendarDays,
     HiOutlinePencilSquare,
+    HiOutlineCloudArrowUp,
+    HiOutlineAdjustmentsHorizontal,
+    HiOutlineArrowsRightLeft,
 } from 'react-icons/hi2';
 
 
 const _config = {
-    PHONE_NUMBER: '+123 456 7890',
+    PHONE_NUMBER: '+919888054889',
     EMAIL: 'support@yourcompany.com',
     NAVIGATION_LINKS: [
         { name: 'Home', href: '#' },
@@ -76,6 +79,21 @@ const _config = {
             title: 'Tax Prep & Filing Support',
             description: 'Let us handle your tax filings with precision, keeping you compliant and worry-free all year round.',
             icon: <HiOutlinePencilSquare />,
+        },
+        {
+            title: 'Conversion balance',
+            description: 'We help ensure your opening balances are accurate during accounting software transitions, maintaining continuity and financial integrity.',
+            icon: <HiOutlineArrowsRightLeft />,
+        },
+        {
+            title: 'Alignment Journals',
+            description: 'We prepare alignment journals to ensure your books are accurate, consistent, and in sync with your financial reporting requirements.',
+            icon: <HiOutlineAdjustmentsHorizontal />,
+        },
+        {
+            title: 'Data Import (Bank Statemnet and Assets)',
+            description: 'We securely import and organize your bank transactions and fixed assets data, streamlining your financial workflow from day one.',
+            icon: <HiOutlineCloudArrowUp />,
         },
     ],
     TESTIMONIALS: [

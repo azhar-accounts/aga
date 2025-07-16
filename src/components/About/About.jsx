@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function About() {
     return (
         <section
@@ -10,24 +8,37 @@ export default function About() {
                 <h2 className="text-3xl font-semibold text-gray-800">
                     About Us
                 </h2>
-                <p className="m-0 text-sm leading-[20px] text-seconday">
-                    At
-                    <span className="mx-1 font-semibold text-black">AGA</span>
-                    we're on a mission to simplify finance for individuals,
-                    startups, and growing businesses. Though we're new on the
-                    scene, our passion for precision, transparency, and client
-                    success runs deep. <br></br>
-                    <br></br>We understand that accounting isn’t just about
-                    numbers—it’s about giving you clarity and confidence in your
-                    financial journey. From day one, we've committed ourselves
-                    to being more than just accountants. We're your partners,
-                    advisors, and supporters in building something stronger.
-                    <br></br>
-                    <br></br>
-                    Whether you're navigating tax returns, setting up
-                    bookkeeping systems, or just need someone to guide you
-                    through the financial side of your business, we're here to
-                    help—reliably and honestly. Let’s grow together.
+                <p className="m-0 leading-[20px] text-seconday">
+                    At{' '}
+                    <span className="mx-1 font-semibold text-black">AGA</span>,
+                    we're here to simplify finance for individuals, startups,
+                    and growing businesses. While we're new to the scene, our
+                    foundation is built on precision, transparency, and a deep
+                    commitment to client success.
+                    <br />
+                    <br />
+                    We believe accounting is more than just numbers — it’s about
+                    providing clarity, control, and confidence in your financial
+                    journey. From tax returns to bookkeeping systems and
+                    strategic advice, we act as your trusted partners at every
+                    step.
+                    <br />
+                    <br />
+                    Our team brings specialized expertise in
+                    <span className="mx-1 font-medium text-black">
+                        Xero Workpapers
+                    </span>
+                    and
+                    <span className="mx-1 font-medium text-black">
+                        CCH Workpapers
+                    </span>
+                    , enabling us to streamline your workflows and ensure
+                    compliance with efficiency and accuracy.
+                    <br />
+                    <br />
+                    Whether you're just starting out or scaling up, we're here
+                    to support you with reliable, honest, and expert accounting
+                    services. Let’s grow together.
                 </p>
             </div>
         </section>

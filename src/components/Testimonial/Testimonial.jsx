@@ -41,7 +41,7 @@ export default function Testimonial() {
                 >
                     {_config.TESTIMONIALS?.map((item, idx) => (
                         <SwiperSlide key={idx}>
-                            <div className="bg-white  border-t-soft-blue border-t-4  w-full shadow-md rounded-2xl min-h-[200px] p-8 h-full mx-4 text-left text-sm space-y-3 flex flex-col justify-between">
+                            <div className="bg-white  border-t-soft-blue border-t-4  w-full shadow-md rounded-2xl min-h-[200px] p-8 h-full mx-4 text-left space-y-3 flex flex-col justify-between">
                                 <p className="text-black">“{item.feedback}”</p>
                                 <p className="font-semibold text-black">
                                     - {item.author}

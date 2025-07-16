@@ -63,7 +63,7 @@ export default function CTA() {
                         Send Enquiry
                     </button>
                 </form>
-                <div className="flex__center flex-col sm:flex-row  text-sm gap-4">
+                <div className="flex__center flex-col sm:flex-row gap-4">
                     <div className="flex items-center gap-2">
                         <FaPhoneAlt />
                         <a

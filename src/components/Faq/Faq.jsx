@@ -50,7 +50,7 @@ const FAQSection = () => {
                                         isOpen ? 'max-h-40 mt-3' : 'max-h-0'
                                     }`}
                                 >
-                                    <p className="text-seconday text-sm">
+                                    <p className="text-seconday">
                                         {faq.answer}
                                     </p>
                                 </div>
