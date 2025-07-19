@@ -14,8 +14,8 @@ import {
 
 
 const _config = {
-    PHONE_NUMBER: '+919888054889',
-    EMAIL: 'support@yourcompany.com',
+    PHONE_NUMBER: process.env.REACT_APP_PHONE_NUMBER,
+    EMAIL: process.env.REACT_APP_EMAIL,
     NAVIGATION_LINKS: [
         { name: 'Home', href: '#' },
         { name: 'About Us', href: '#about-us' },
@@ -184,7 +184,8 @@ const _config = {
         
       We’ll handle everything so you never miss a deadline or face penalties.`,
         },
-    ]
+    ],
+    FORMSPREE_URL: process.env.REACT_APP_FORMSPREE_URL,
 }
 
 export default _config

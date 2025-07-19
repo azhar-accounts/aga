@@ -1,7 +1,29 @@
+import { useForm } from '@formspree/react';
 import _config from '../../constants';
 import { FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa';
+import { useEffect, useRef } from 'react';
+import { Bounce, toast } from 'react-toastify';
 
 export default function CTA() {
+    const [state, handleSubmit, reset] = useForm('xeozobrg');
+    const formRef = useRef();
+    useEffect(() => {
+        if (state?.succeeded) {
+            toast.success('Thank you! We have received your enquiry.', {
+                position: 'top-center',
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: 'colored',
+                transition: Bounce,
+            });
+            formRef.current.reset();
+        }
+    }, [state.succeeded, reset]);
+
     return (
         <section
             className="bg-primary py-16 px-4 scroll-mt-20 contact__us__section"
@@ -15,9 +37,9 @@ export default function CTA() {
                 </p>
 
                 <form
+                    ref={formRef}
+                    onSubmit={handleSubmit}
                     className="max-w-2xl mx-auto space-y-6 bg-white/10 backdrop-blur-sm p-8 rounded-xl"
-                    action="https://formspree.io/f/xblorork"
-                    method="POST"
                 >
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <input
@@ -60,7 +82,7 @@ export default function CTA() {
                         type="submit"
                         className="bg-white text-soft-blue hover:text-primary font-semibold px-6 py-3 rounded transition"
                     >
-                        Send Enquiry
+                        {state?.submitting ? 'Submitting...' : ' Send Enquiry'}
                     </button>
                 </form>
                 <div className="flex__center flex-col sm:flex-row gap-4">
