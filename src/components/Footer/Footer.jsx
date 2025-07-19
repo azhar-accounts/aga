@@ -12,10 +12,7 @@ export default function Footer() {
                         Contact Us
                     </h4>
                     <div className="space-y-1">
-                        <p>
-                            123 Finance Street, Suite 456 Business Bay,
-                            Springfield, NY 10001 United States
-                        </p>
+                        <p>{_config.ADDRESS}</p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 text-gray-700 pb-6  text-white">
                             <div className="flex items-center gap-2">
                                 <FaPhoneAlt />

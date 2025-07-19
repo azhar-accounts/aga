@@ -16,6 +16,7 @@ import {
 const _config = {
     PHONE_NUMBER: process.env.REACT_APP_PHONE_NUMBER,
     EMAIL: process.env.REACT_APP_EMAIL,
+    ADDRESS: process.env.REACT_APP_ADDRESS,
     NAVIGATION_LINKS: [
         { name: 'Home', href: '#' },
         { name: 'About Us', href: '#about-us' },
